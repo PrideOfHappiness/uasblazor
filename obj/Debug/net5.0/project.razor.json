@@ -364,6 +364,59 @@
         }
       },
       {
+        "HashCode": 1997861624,
+        "Kind": "Components.Component",
+        "Name": "UASBlazor.Pages.DetailStudent",
+        "AssemblyName": "UASBlazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DetailStudent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "UASBlazor.Pages.DetailStudent"
+        }
+      },
+      {
+        "HashCode": 484840076,
+        "Kind": "Components.Component",
+        "Name": "UASBlazor.Pages.DetailStudent",
+        "AssemblyName": "UASBlazor",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "UASBlazor.Pages.DetailStudent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "id",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "UASBlazor.Pages.DetailStudent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 2004357335,
         "Kind": "Components.Component",
         "Name": "UASBlazor.App",
@@ -13288,6 +13341,11 @@
     {
       "FilePath": "d:\\Codes\\frontend_blazor\\UASBlazor\\Pages\\EditStudent.razor",
       "TargetPath": "Pages\\EditStudent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "d:\\Codes\\frontend_blazor\\UASBlazor\\Pages\\DetailStudent.razor",
+      "TargetPath": "Pages\\DetailStudent.razor",
       "FileKind": "component"
     },
     {

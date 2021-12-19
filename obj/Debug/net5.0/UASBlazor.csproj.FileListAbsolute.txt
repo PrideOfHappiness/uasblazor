@@ -640,3 +640,5 @@ D:\Codes\frontend_blazor\UASBlazor\obj\Debug\net5.0\RazorDeclaration\Pages\EditS
 D:\Codes\frontend_blazor\UASBlazor\obj\Debug\net5.0\Razor\Pages\AddStudents.razor.g.cs
 D:\Codes\frontend_blazor\UASBlazor\obj\Debug\net5.0\Razor\Pages\DeleteStudent.razor.g.cs
 D:\Codes\frontend_blazor\UASBlazor\obj\Debug\net5.0\Razor\Pages\EditStudent.razor.g.cs
+D:\Codes\frontend_blazor\UASBlazor\obj\Debug\net5.0\RazorDeclaration\Pages\DetailStudent.razor.g.cs
+D:\Codes\frontend_blazor\UASBlazor\obj\Debug\net5.0\Razor\Pages\DetailStudent.razor.g.cs

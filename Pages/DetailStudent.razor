@@ -1,0 +1,22 @@
+@page "/detail/{id}"
+
+@if(Student ==  null ){
+    <div class="spinner">
+    </div>
+}
+else{
+        <div class="col-sm-8">
+            <h2> Details</h2>
+            <h3> Students</h3>
+            <hr>
+            <h4> NIM            : @Student.studentID</h4>
+            <h4> Nama Belakang  : @Student.lastName</h4>
+            <h4> Nama Depan     : @Student.firstName</h4>
+            <h4> Tanggal Masuk  : @Student.enrollmentDate</h4>
+        </div>
+        <br>
+        <div class="col-sm-8">
+            <a href="@($"edit/{Student.studentID}")" > Edit</a>
+            <a href="studentspage" > Back to List</a>
+        </div>
+}

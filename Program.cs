@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using UASBlazor.Services;
 
 namespace UASBlazor
 {
@@ -17,8 +18,9 @@ namespace UASBlazor
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
 
-            var uri = new Uri("https://akademikbackend.azurewebsites.net/swagger/index.html");
+            var uri = new Uri("https://akademikbackend.azurewebsites.net/");
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = uri } );
+            builder.Services.AddScoped<IDStudentService,StudentService>();
 
             await builder.Build().RunAsync();
         }

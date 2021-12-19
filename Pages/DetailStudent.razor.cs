@@ -2,22 +2,29 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components;
 using UASBlazor.Models;
 using UASBlazor.Services;
-using Microsoft.AspNetCore.Components;
 
 namespace UASBlazor.Pages
 {
-    public partial class StudentPage 
+    public partial class DetailStudent
     {
-        public List<Student> Students { get ; set; } = new List<Student>();
+        [Parameter]
+
+        public string id { get; set; }
+
+        public Student Student { get; set; } = new Student();
 
         [Inject]
         public IDStudentService StudentService { get; set; }
-        
+
         protected override async Task OnInitializedAsync()
         {
-           Students = (await StudentService.GetAll()).ToList();
-        }
+            id = id ?? "1";
+            Student = await StudentService.GetbyId(int.Parse(id));
+        } 
+
+
     }
 }
