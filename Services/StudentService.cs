@@ -26,7 +26,7 @@ namespace UASBlazor.Services
         }
 
         public async Task<Student> Add(Student student) {
-            var response = await _httpclient.PostAsJsonAsync($"api/Student/", student);
+            var response = await _httpclient.PostAsJsonAsync($"/api/Student", student);
             if(response.IsSuccessStatusCode){ 
                return await JsonSerializer.DeserializeAsync<Student>(await response.Content.ReadAsStreamAsync()); 
             }
