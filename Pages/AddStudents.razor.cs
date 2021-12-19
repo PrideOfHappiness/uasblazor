@@ -16,10 +16,9 @@ namespace UASBlazor.Pages{
         [Inject]
         public NavigationManager NavigationManager { get; set; }
         
-
         protected async Task HandleValidSubmit(){
             var result = await StudentService.Add(Students);
-            NavigationManager.NavigateTo("/studentspage");
+            NavigationManager.NavigateTo("studentspage");
         }
     }
 }
