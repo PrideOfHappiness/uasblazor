@@ -1,0 +1,40 @@
+@page "/add"
+
+<EditForm Model="@Students" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <h2> Create Students</h2>
+    <hr/>
+    <div class="form-group row">
+        <label for="studentID" class="col-sm-2 col-form-label">
+            NIM
+        </label>
+        <div class="col-sm-10">
+            <InputText id="studentID" class="form-control" placeholder="NIM / Student ID" />   
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="firstName" class="col-sm-2 col-form-label">
+            Nama Depan
+        </label>
+        <div class="col-sm-10">
+            <InputText id="firstName" class="form-control" placeholder="Nama Depan / First Name" />   
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="lastName" class="col-sm-2 col-form-label">
+            Nama Belakang
+        </label>
+        <div class="col-sm-10">
+            <InputText id="lastName" class="form-control" placeholder="Nama Belakang / Last Name" />   
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="enrollmentDate" class="col-sm-2 col-form-label">
+            Tanggal masuk
+        </label>
+        <div class="col-sm-10">
+            <InputDate @bind-Value="Students.enrollmentDate" class="form-control"> </InputDate>  
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Create</button>
+</EditForm>
